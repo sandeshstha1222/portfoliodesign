@@ -1,0 +1,92 @@
+.Navbar {
+  width: 80%;
+  height: 10vh;
+  left: 10%;
+  top: 2em;
+  display: flex;
+  padding: 1em 2em;
+  background-color: rgba(107, 106, 106, 0.3);
+  position: fixed;
+  border-radius: 100px;
+  backdrop-filter: blur(15px);
+  justify-content: space-between;
+}
+.Navbar .Logo {
+  margin-left: 4em;
+  font-family: "Cookie", cursive;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  line-height: 0.3;
+}
+.Navbar .List {
+  display: flex;
+  gap: 3em;
+  float: right;
+  cursor: pointer;
+  align-items: center;
+  margin-right: 4em;
+  font-family: "Poppins", sans-serif;
+}
+.Navbar .List li {
+  color: #fff;
+}
+.Navbar .List li:hover {
+  color: #4db5ff;
+  transition: 0.4s;
+}
+.Navbar .Menu {
+  display: none;
+}
+.Navbar .Menu[name="Show-Menu"] {
+  display: none;
+}
+
+.Navbar .Menu[name="Close-Menu"] {
+  display: none;
+}
+/* ***********FOR MEDIUM DEVICES LIKE TABLET*********** */
+@media screen and (max-width: 1024px) {
+}
+
+/* ***********FOR SMALL DEVICES LIKE MOBILE*********** */
+
+@media screen and (max-width: 600px) {
+  .Navabar .List {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    width: 300px;
+    height: 100vh;
+    transform: translateX(100%);
+  }
+  .Navbar .List li {
+    color: #fff;
+  }
+  .Navbar .List li:hover {
+    color: #4db5ff;
+    transition: 0.4s;
+  }
+  .Navbar .Menu {
+    display: inline-block;
+    z-index: 999;
+  }
+  .Navabar .Menu .Show-Menu {
+    font-size: 4rem;
+    display: block;
+  }
+}
+@media screen and (max-width: 380px) {
+  .Navbar .Logo {
+    /* margin-left: 4em; */
+    font-family: "Cookie", cursive;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

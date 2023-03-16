@@ -1,0 +1,9 @@
+.Header {
+  margin-top: 15em;
+  /* display: flex;   */
+}
+.CV {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
