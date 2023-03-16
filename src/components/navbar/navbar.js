@@ -25,9 +25,9 @@ const Navbar = () => {
       <div className={showMenu}>
         <li>HOME</li>
         <li>PORTFOLIO</li>
-        <li>
-          <Link to="/aboutme">ABOUTME</Link>
-        </li>
+        <Link to="/aboutme">
+          <li>ABOUTME</li>
+        </Link>
         <li>CONTACTME</li>
       </div>
       <div onClick={navToggle} className="Menu">
