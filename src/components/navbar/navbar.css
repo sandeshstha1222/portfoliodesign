@@ -28,6 +28,7 @@
   margin-right: 4em;
   font-family: "Poppins", sans-serif;
 }
+
 .Navbar .List li {
   color: #fff;
 }
@@ -35,49 +36,58 @@
   color: #4db5ff;
   transition: 0.4s;
 }
-.Navbar .Menu {
-  display: none;
-}
-.Navbar .Menu[name="Show-Menu"] {
-  display: none;
-}
-
-.Navbar .Menu[name="Close-Menu"] {
+.Navbar .Menu .Open-Menu {
   display: none;
 }
 /* ***********FOR MEDIUM DEVICES LIKE TABLET*********** */
 @media screen and (max-width: 1024px) {
+  .Navbar .Menu .Open-Menu {
+    align-items: center;
+    height: max-content;
+    cursor: pointer;
+    display: block;
+  }
+  .Navbar .List {
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 35%;
+    width: 50vw;
+    height: max-content;
+    padding: 3em 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    transition: 0.2s ease-in;
+    opacity: 0%;
+  }
+  .Navbar .menu_list {
+    opacity: 100%;
+  }
 }
-
 /* ***********FOR SMALL DEVICES LIKE MOBILE*********** */
 
 @media screen and (max-width: 600px) {
-  .Navabar .List {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    top: 90px;
-    right: 0px;
-    width: 300px;
-    height: 100vh;
-    transform: translateX(100%);
-  }
-  .Navbar .List li {
-    color: #fff;
-  }
-  .Navbar .List li:hover {
-    color: #4db5ff;
-    transition: 0.4s;
-  }
-  .Navbar .Menu {
-    display: inline-block;
-    z-index: 999;
-  }
-  .Navabar .Menu .Show-Menu {
-    font-size: 4rem;
+  .Navbar .Menu .Open-Menu {
+    align-items: center;
+    height: max-content;
+    cursor: pointer;
     display: block;
+  }
+  .Navbar .List {
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 35%;
+    width: 50vw;
+    height: max-content;
+    padding: 3em 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    transition: 0.2s ease-in;
+    opacity: 0%;
+  }
+  .Navbar .menu_list {
+    opacity: 100%;
   }
 }
 @media screen and (max-width: 380px) {

@@ -4,7 +4,12 @@ import { CgMenu, CgCloseR } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState("List");
+  const navToggle = () => {
+    if (showMenu === "List") {
+      setShowMenu("List menu_list");
+    } else setShowMenu("List");
+  };
 
   return (
     <div className="Navbar">
@@ -17,7 +22,7 @@ const Navbar = () => {
           </span>
         </h1>
       </div>
-      <div className={showMenu ? "List Mobile-View" : "List"}>
+      <div className={showMenu}>
         <li>HOME</li>
         <li>PORTFOLIO</li>
         <li>
@@ -25,9 +30,9 @@ const Navbar = () => {
         </li>
         <li>CONTACTME</li>
       </div>
-      <div className="Menu">
-        <CgMenu className="Show-Menu" onClick={() => setShowMenu(true)} />
-        <CgCloseR className="Close-Menu" onClick={() => setShowMenu(false)} />
+      <div onClick={navToggle} className="Menu">
+        <CgMenu className="Open-Menu" size={30} />
+        {/* <CgCloseR className="Close-Menu" onClick={() => setShowMenu(false)} /> */}
       </div>
     </div>
   );
