@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { CgMenu, CgCloseR } from "react-icons/cg";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [activeNav, setActiveNav] = useState("/");
   const [showMenu, setShowMenu] = useState("List");
   const navToggle = () => {
     if (showMenu === "List") {
@@ -22,17 +22,41 @@ const Navbar = () => {
           </span>
         </h1>
       </div>
-      <div className={showMenu}>
-        <li>HOME</li>
-        <li>PORTFOLIO</li>
-        <Link to="/aboutme">
-          <li>ABOUTME</li>
-        </Link>
-        <li>CONTACTME</li>
-      </div>
-      <div onClick={navToggle} className="Menu">
-        <CgMenu className="Open-Menu" size={30} />
-        {/* <CgCloseR className="Close-Menu" onClick={() => setShowMenu(false)} /> */}
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div className={showMenu}>
+          <li
+
+          //   onClick={() => setActiveNav("/header")}
+          //   className={activeNav === "/" ? "active" : ""}
+          >
+            <a href="#">HOME</a>
+          </li>
+          <li
+
+          // onClick={() => setActiveNav("/portfolio")}
+          // className={activeNav === "/portfolio" ? "active" : ""}
+          >
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li
+
+          //   onClick={() => setActiveNav("/aboutme")}
+          //   className={activeNav === "/aboutme" ? "active" : ""}
+          >
+            <a href="#about">ABOUTME</a>
+          </li>
+          <li
+
+          // onClick={() => setActiveNav("/contactme")}
+          // className={activeNav === "/contactme" ? "active" : ""}
+          >
+            <a href="#contact">CONTACTME</a>
+          </li>
+        </div>
+        <div onClick={navToggle} className="Menu">
+          <CgMenu className="Open-Menu" size={30} />
+          {/* <CgCloseR className="Close-Menu" onClick={() => setShowMenu(false)} /> */}
+        </div>
       </div>
     </div>
   );

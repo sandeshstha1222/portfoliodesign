@@ -25,16 +25,18 @@
   float: right;
   cursor: pointer;
   align-items: center;
-  margin-right: 4em;
   font-family: "Poppins", sans-serif;
 }
 
-.Navbar .List li {
+.Navbar .List li a {
   color: #fff;
 }
-.Navbar .List li:hover {
+.Navbar .List li a:hover {
   color: #4db5ff;
   transition: 0.4s;
+}
+li.active {
+  color: #4db5ff;
 }
 .Navbar .Menu .Open-Menu {
   display: none;
