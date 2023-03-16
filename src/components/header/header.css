@@ -1,9 +1,69 @@
 .Header {
   margin-top: 15em;
-  /* display: flex;   */
+  width: 100%;
+  height: 100vh;
 }
+.Header-Content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-left: 10em;
+  gap: 5em;
+}
+
 .CV {
   display: flex;
   gap: 1em;
   justify-content: center;
+}
+.Header .Image {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.Header .Image .Profile-Image {
+  width: max-content;
+  background: linear-gradient(#4db5ff, transparent);
+  border-radius: 10em 10em 0 0;
+}
+
+/* ********Social_CSS******** */
+.Social-Links {
+  width: max-content;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: rgba(72, 72, 72, 0.5);
+  padding: 2em 0.3em;
+  border-radius: 1em;
+  backdrop-filter: blur(5px);
+}
+.Social-Links a {
+  color: #fff;
+  cursor: pointer;
+}
+.Social-Links a:hover {
+  color: #4db5ff;
+}
+
+/* ***********FOR MEDIUM DEVICES LIKE TABLET*********** */
+@media screen and (max-width: 1024px) {
+}
+
+/* ***********FOR SMALL DEVICES LIKE MOBILE*********** */
+
+@media screen and (max-width: 600px) {
+  .Header .Image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Header .Image .Profile-Image {
+    width: max-content;
+    background: linear-gradient(#4db5ff, transparent);
+    border-radius: 10em 10em 8em 8em;
+  }
 }

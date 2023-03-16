@@ -1,15 +1,23 @@
 import React from "react";
+import "./header.css";
 import { SiLinkedin, SiGithub, SiFacebook, SiInstagram } from "react-icons/si";
 
 const Socials = () => {
   return (
-    <div>
+    <div className="Social-Links">
       <a>
-        <SiLinkedin />
+        <SiLinkedin size={30} />
       </a>
-      <SiGithub />
-      <SiFacebook />
-      <SiInstagram />
+
+      <a>
+        <SiGithub size={30} />
+      </a>
+      <a>
+        <SiFacebook size={30} />
+      </a>
+      <a>
+        <SiInstagram size={30} />
+      </a>
     </div>
   );
 };

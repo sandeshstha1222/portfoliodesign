@@ -24,10 +24,19 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+a:-webkit-any-link {
+  color: white;
+  text-decoration: none;
+}
+a:-webkit-any-link:hover {
+  color: #4db5ff;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
+  background-image: url("./assests/bg.jpg");
   color: #fff;
   line-height: 1.7;
 }

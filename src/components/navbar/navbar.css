@@ -5,7 +5,7 @@
   top: 2em;
   display: flex;
   padding: 1em 2em;
-  background-color: rgba(107, 106, 106, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   border-radius: 100px;
   backdrop-filter: blur(15px);

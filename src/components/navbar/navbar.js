@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { CgMenu, CgCloseR } from "react-icons/cg";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -20,7 +20,9 @@ const Navbar = () => {
       <div className={showMenu ? "List Mobile-View" : "List"}>
         <li>HOME</li>
         <li>PORTFOLIO</li>
-        <li>ABOUTME</li>
+        <li>
+          <Link to="/aboutme">ABOUTME</Link>
+        </li>
         <li>CONTACTME</li>
       </div>
       <div className="Menu">

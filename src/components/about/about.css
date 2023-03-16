@@ -1,0 +1,14 @@
+.h1-text {
+  font-size: 50px;
+  width: max-content;
+  text-align: start;
+  line-height: 1;
+  margin-left: 3em;
+}
+.p-text {
+  width: max-content;
+  text-align: start;
+  text-decoration: wavy;
+  line-height: 1;
+  margin-left: 9.5em;
+}
