@@ -1,0 +1,10 @@
+.Contact-List {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+}
+.Contact-Box {
+  background-color: rgb(42, 43, 120);
+  padding: 5em;
+  border-radius: 5px;
+}

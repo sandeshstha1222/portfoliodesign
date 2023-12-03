@@ -22,19 +22,31 @@
   display: flex;
   /* justify-content: center; */
   align-items: center;
+  align-content: inherit;
 }
 .Header .Image .Profile-Image {
   width: max-content;
   background: linear-gradient(#4db5ff, transparent);
-  border-radius: 10em 10em 0 0;
+  border-radius: 0em 00em 0 0;
+}
+.animation {
+  position: relative;
+}
+.Header .Profile-Image {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8em 0 0 8em;
 }
 
 /* ********Social_CSS******** */
 
 .Socials {
   display: flex;
-  /* height: 100vh; */
+  height: 100vh;
   align-items: center;
+  position: absolute;
 }
 .Social-Links {
   width: max-content;

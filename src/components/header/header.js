@@ -1,7 +1,8 @@
 import React from "react";
 import "./header.css";
-import photo from "../../assests/MyProfile.png";
+import photo from "../../assests/profile.png";
 import { TypeAnimation } from "react-type-animation";
+import Animation from "./Animation/index";
 import Cv from "./Cv";
 
 const Header = () => {
@@ -40,6 +41,7 @@ const Header = () => {
               }}
             />
           </p>
+
           <Cv />
         </div>
         <div className="Image">
@@ -49,6 +51,7 @@ const Header = () => {
             src={photo}
             alt="SANDESH"
           />
+          <Animation className="animation" />
         </div>
       </div>
     </div>

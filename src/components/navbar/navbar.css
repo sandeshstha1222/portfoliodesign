@@ -35,6 +35,19 @@
   color: #4db5ff;
   transition: 0.4s;
 }
+.Navbar .List li a::after {
+  content: "";
+  width: 0%;
+  height: 1.5px;
+  background: #4db5ff;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.Navbar .List li a:hover::after {
+  width: 100%;
+}
+
 li.active {
   color: #4db5ff;
 }
