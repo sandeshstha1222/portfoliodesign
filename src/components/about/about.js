@@ -5,8 +5,8 @@ const about = () => {
     <div id="about" className="about">
       <div className="text">
         <h1 className="h1-text">
-          Hello, I Am
-          <br /> Sandesh Shrestha
+          About
+          <br /> ME
         </h1>
         <p className="p-text">
           <p style={{ fontSize: "0.8em" }}>

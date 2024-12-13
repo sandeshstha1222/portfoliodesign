@@ -8,6 +8,7 @@ import Portfolio from "./portfolio/portfolio";
 import Contact from "./contact/contact";
 import "./Home.css";
 import Projects from "./projects/projects";
+import Footer from "./footer/footer";
 const Home = () => {
   return (
     <div style={{ position: "relative" }}>
@@ -16,9 +17,11 @@ const Home = () => {
       <Socials />
       <Header />
       {/* <Portfolio /> */}
-      <Projects />
       <About />
+      <Projects />
+
       <Contact />
+      <Footer />
     </div>
   );
 };

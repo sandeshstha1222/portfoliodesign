@@ -1,3 +1,7 @@
+.Contact {
+  width: 100%;
+  height: 100vh;
+}
 .Contact-List {
   display: flex;
   justify-content: center;
